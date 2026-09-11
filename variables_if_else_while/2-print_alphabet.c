@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-int main(void) {
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int x;
 
-  int x = 97;
-  char n = '\n';
+	x = 97;
+	while (x < 123)
+	{
+		putchar(x);
+		x++;
+	}
+	putchar('\n');
 
-  while (x < 123) {
-    putchar(x);
-    x++;
-  }
-  putchar(n);
-
-  return 0;
+	return (0);
 }

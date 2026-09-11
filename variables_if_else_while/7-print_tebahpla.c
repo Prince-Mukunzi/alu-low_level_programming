@@ -1,14 +1,21 @@
 #include <stdio.h>
 
-int main(void) {
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int x;
 
-  int x = 122;
+	x = 122;
+	while (x > 96)
+	{
+		putchar(x);
+		x--;
+	}
+	putchar('\n');
 
-  while (x > 96) {
-    putchar(x);
-    x--;
-  }
-  putchar(10);
-
-  return 0;
+	return (0);
 }
