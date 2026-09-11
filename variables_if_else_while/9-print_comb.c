@@ -1,12 +1,28 @@
 #include <stdio.h>
 
-int main(void) {
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int x;
 
-  for (int x = '0'; x <= '9'; x++) {
-    putchar(x);
-    putchar(44);
-    putchar(32);
-  }
+	for (x = '0'; x <= '9'; x++)
+	{
+		if (x < '9')
+		{
+			putchar(x);
+			putchar(',');
+			putchar(' ');
+		}
+		else
+		{
+			putchar(x);
+		}
+	}
+	putchar('\n');
 
-  return 0;
+	return (0);
 }
